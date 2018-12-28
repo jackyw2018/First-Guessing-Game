@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="container p-5">
+    <h1 class="display-3 text-center my-3 text-uppercase">
+      Play the Guessing Game!
+    </h1>
+    <div id="message" class="message my-5">
+      <h2 class="message__content display-5 text-center">
+        Guess a number between 1 - 100!
+      </h2>
+    </div>
+
+    <div class="valueInput my-5 p-3 mx-auto d-flex">
+      <input type="text" class="p-5 border rounded text-center" id="currentGuess" placeholder="Enter your guess!" />
+      <div class="valueInput__buttons d-flex flex-column justify-content-between ml-5">
+        <button id="reset" class="btn btn-lg border" type="button">Reset</button>
+        <button id="hint" class="btn btn-lg border" type="button">Hint</button>
+      </div>
+    </div>
+
+    <ul class="guesses text-center d-flex list-unstyled justify-content-between w-75 mx-auto">
+      <li class="guesses__item border rounded p-5"><i class="fas fa-question"></i></li>
+      <li class="guesses__item border rounded p-5"><i class="fas fa-question"></i></li>
+      <li class="guesses__item border rounded p-5"><i class="fas fa-question"></i></li>
+      <li class="guesses__item border rounded p-5"><i class="fas fa-question"></i></li>
+      <li class="guesses__item border rounded p-5"><i class="fas fa-question"></i></li>
+    </ul>
+
+    <footer>
+      <div class="d-flex justify-content-between mx-5 mt-5">
+        <a href="https://www.fullstackacademy.com/">
+          <img src="https://www.fullstackacademy.com/images/logo-color.png" alt="FullStack Academy Logo" />
+        </a>
+        <a href="https://github.com/jackyw2018" class="d-flex align-items-center">
+          <p class="text-center text-uppercase lead font-weight-bold">Jacky Wong</p>
+        </a>
+        <a href="https://www.gracehopper.com/">
+          <img src="https://www.gracehopper.com/images/gh-logo-sm-w-h_1.svg" alt="Grace Hopper Academy Logo" />
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

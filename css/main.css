@@ -1,0 +1,66 @@
+:root {
+    --color-1: #6B6255;
+    --color-2: #665A6A;
+    --color-3: #D6D5D5;
+    --color-4: #373A3C;
+    --color-5: #838484;
+}
+
+.btn {
+    color: var(--color-4);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-3);
+}
+
+.background {
+    background-image: url('../img/background-photo-excel.jpg');
+    background-size: cover;
+    width: 100vw;
+    filter: grayscale(50%) blur(10px);
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.valueInput {
+    width: 50%;
+    outline: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+
+::placeholder {
+    font-size: 1.25rem;
+    color: var(--color-4);
+}
+
+.valueInput__buttons button {
+    width: 100%
+}
+
+img {
+    height: 100px;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 200px;
+}
+
+li {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+a p,
+i {
+    color: var(--color-2);
+}
