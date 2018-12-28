@@ -103,22 +103,24 @@ resetDOM.addEventListener('click', init);
 
 // Event handler - hint
 hintDOM.addEventListener('click', function () {
-    let randomHintInd = Math.floor((Math.random() * hints.length));
+    if (gamePlaying) {
+        let randomHintInd = Math.floor((Math.random() * hints.length));
 
 
-    switch (randomHintInd) {
-        case 0:
-            sendMsg(`Is the number divisible by 2? ${hints[randomHintInd]}`);
-            break;
-        case 1:
-            sendMsg(`Is the number divisible by 3? ${hints[randomHintInd]}`);
-            break;
-        case 2:
-            sendMsg(`Is the number divisible by 7? ${hints[randomHintInd]}`);
-            break;
-        case 3:
-            sendMsg(`Is the number greater than 50? ${hints[randomHintInd]}`);
-            break;
+        switch (randomHintInd) {
+            case 0:
+                sendMsg(`Is the number divisible by 2? ${hints[randomHintInd]}`);
+                break;
+            case 1:
+                sendMsg(`Is the number divisible by 3? ${hints[randomHintInd]}`);
+                break;
+            case 2:
+                sendMsg(`Is the number divisible by 7? ${hints[randomHintInd]}`);
+                break;
+            case 3:
+                sendMsg(`Is the number greater than 50? ${hints[randomHintInd]}`);
+                break;
+        }
     }
 })
 
