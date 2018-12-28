@@ -65,7 +65,6 @@ currentGuessDOM.addEventListener('keypress', function (event) {
     // if user presses enter
     if (event.keycode === 13 || event.which === 13) {
         currentGuess = Number(currentGuessDOM.value);
-        console.log(currentGuess, randNum);
         // valid entry
         if (typeof currentGuess === 'number' && currentGuess >= 1 && currentGuess <= 100) {
             // keep count and store the guess
@@ -77,6 +76,7 @@ currentGuessDOM.addEventListener('keypress', function (event) {
             // check logic
             if (currentGuess === randNum) {
                 sendMsg(`Congratulations! The Number is ${randNum}`);
+                gamePlaying = false;
             } else {
                 if (guessCount < 5) {
                     // next guess should be smaller
