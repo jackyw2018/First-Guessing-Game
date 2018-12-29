@@ -88,6 +88,7 @@ currentGuessDOM.addEventListener('keypress', function (event) {
                         sendMsg(`${randomMsg} Try higher.`)
                     }
                 } else {
+                    gamePlaying = false;
                     sendMsg(`Sorry. The number is ${randNum}`)
                 }
             }
